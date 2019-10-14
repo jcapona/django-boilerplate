@@ -4,11 +4,23 @@
   <meta charset="utf-8">
   <title>{% block title %}Django Boilerplate{% endblock %}</title>
 </head>
+
 <body>
+  <header>
+      <div style="text-align:right">
+      {% if user.is_authenticated %}
+        <p>Hi {{ user.username }}! <a href="{% url 'logout' %}">[logout]</a></p>
+      {% else %}
+        <a href="{% url 'login' %}">login</a> | <a href="{% url 'signup' %}">signup</a>
+      {% endif %}
+      </div>
+  </header>
+
   <main>
     {% block content %}
     {% endblock %}
   </main>
 </body>
+
 </html>
 

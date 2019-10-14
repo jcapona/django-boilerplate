@@ -2,19 +2,10 @@
 {% block title %}Home{% endblock %}
 {% block content %}
 
-<div style="text-align:center"><h2>Django Boilerplate</h2></div>
-
-{% if user.is_authenticated %}
-  <div style="text-align:center">
-    <p>Hi {{ user.username }}!</p>
-    <a href="{% url 'logout' %}">logout</a>
-  </div>
-{% else %}
-  <div style="text-align:center">
-    <p>You are not logged in</p>
-    <a href="{% url 'login' %}">login</a>
-  </div>
-{% endif %}
+<div style="text-align:center">
+  <h2>Django Boilerplate</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+</div>
 
 {% endblock %}
 
