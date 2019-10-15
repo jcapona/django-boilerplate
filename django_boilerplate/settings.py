@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_boilerplate.apps.accounts.apps.AccountsConfig',
     'django_boilerplate.apps.home.apps.HomeConfig',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
